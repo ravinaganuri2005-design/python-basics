@@ -29,3 +29,24 @@ print(3 in my_list)
 print(6 not in my_list)
 print("v" in my_string)
 print("z" not in my_string)
+
+# #Bitwise operator
+
+a = int(input("enter the number") )
+b = int(input("enter the second number") )
+print("a & b =", a & b)
+print("a | b =", a | b)
+print("a ^ b =", a ^ b)
+print("~a =", ~a)
+print("~b =", ~b)
+
+# # bitwise operator works            truth table
+
+a = 6 #binary value is 110        1  1  0
+b = 4 # binary value is 100       1  0  0 
+print(a & b)  #output 100         1  0  0  
+
+     
+a = 6                           # 1 1 0 
+b = 4                           # 1 0 0
+print(a | b ) # output is 110     1 1 0
