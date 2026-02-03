@@ -50,3 +50,32 @@ print(a & b)  #output 100         1  0  0
 a = 6                           # 1 1 0 
 b = 4                           # 1 0 0
 print(a | b ) # output is 110     1 1 0
+
+''1. Arithmetic Operators'''
+
+
+#write a program to add two numbers
+a = 32
+b = 45
+c = a + b
+print(c)
+
+#Take two numbers from the user and print their sum, difference, product, and quotient.
+x = int(input("enter first number "))
+y = int(input("enter second number"))
+print(x + y)
+print(x -y)
+print(x * y)
+print(x / y)
+print(x // y)
+
+#Find the remainder when a number is divided by 7.
+x = 13
+y =7
+z = x % y
+print(z)
+
+#Calculate the area of a circle using πr².
+r = 5
+area = 3.14 * r * r
+print("area of circle is ",area)
