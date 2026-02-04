@@ -79,3 +79,56 @@ print(z)
 r = 5
 area = 3.14 * r * r
 print("area of circle is ",area)
+
+# #Swap two numbers using a temporary variable.'''
+a = 32
+b = 12
+temp = a 
+a = b
+b = temp
+print(a,b)
+
+# #Take a number and check if it is divisible by 5 using %.
+a = int(input("enter a number"))
+if a % 5 == 0:
+    print("it is possible to division:")
+else:
+    print("its not possible")
+
+# #Convert seconds into minutes using // and %.
+seconds = int(input("enter a numbers"))
+minutes = seconds // 60
+remaining = seconds % 60
+print("minutes ",minutes)
+print("seconds ",seconds)
+
+#Take two numbers and print which one is greater.
+x = int(input("enter first number "))
+y = int(input("enter second number "))
+if x > y:
+    print("x is greater")
+else:
+    print("y is greater")
+
+#Check if two strings are equal.
+a = "ravi"
+b = "Ravi"
+if a.lower()==b.lower():
+    print('both strings are equal')
+else:
+    print("its not same")
+
+#Take a number and check if it is between 10 and 50.
+#Check if the entered character is a vowel.
+
+num = int(input('enter a number '))
+if num >= 10 and num <= 50:
+    print("number is more than 10 and less than 50 ")
+else:
+    print("num is not between 10 to 50")
+
+char = input("Enter a character: ").lower()  # convert to lowercase
+if char in ['a', 'e', 'i', 'o', 'u']:
+    print("The character is a vowel")
+else:
+    print("The character is not a vowel")
