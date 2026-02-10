@@ -21,3 +21,9 @@ for index in range(10):
         print("breaking the loop")
         break
     print(index)
+
+names=["Ravi","vinod","abhi","prashant"]
+for names in names:
+    if(names == "abhi"):
+        continue
+    print(names)
