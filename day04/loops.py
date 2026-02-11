@@ -24,6 +24,17 @@ for index in range(10):
 
 names=["Ravi","vinod","abhi","prashant"]
 for names in names:
+    print(names)
     if(names == "abhi"):
         continue
     print(names)
+
+num=[1,2,4,5,6,7,7,8,9,]
+for num in num:
+    print(num)
+    if(num==6):
+        print("6 num is found")
+        break
+    else:
+        print("6 num is not found")
+
