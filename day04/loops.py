@@ -38,3 +38,12 @@ for num in num:
     else:
         print("6 num is not found")
 
+
+num = 1
+while num <= 20:
+    if num % 5 ==0:
+        num += 1
+        continue
+    print(num)
+    num += 1
+
