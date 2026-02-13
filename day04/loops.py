@@ -47,3 +47,10 @@ while num <= 20:
     print(num)
     num += 1
 
+while True:
+    password = input ("enter the password:")
+    if password == "python123":
+        print("correct password")
+        break
+    else:
+        print("error password")
