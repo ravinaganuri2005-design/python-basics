@@ -59,3 +59,13 @@ while True:
 #multipication problem
 for i in range(1, 11):
     print("5 x", i, "=", 5 * i)
+
+#Count how many elements are in a list.
+numbers = [1, 2, 3, 4, 5]
+count = 0
+
+for num in numbers:
+    count += 1
+
+print(count)
+
