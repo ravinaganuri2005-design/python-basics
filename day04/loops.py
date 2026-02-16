@@ -63,9 +63,24 @@ for i in range(1, 11):
 #Count how many elements are in a list.
 numbers = [1, 2, 3, 4, 5]
 count = 0
-
 for num in numbers:
     count += 1
 
 print(count)
+
+#check palindrome or not
+
+num = int(input("Enter number: "))
+original = num
+rev = 0
+
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = num // 10
+
+if original == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
 
