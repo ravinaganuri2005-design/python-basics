@@ -84,3 +84,9 @@ if original == rev:
 else:
     print("Not Palindrome")
 
+#print numbers 1 to 20
+i = 0
+while i<=10:
+    print(i,end = " ")
+    i += 1
+
