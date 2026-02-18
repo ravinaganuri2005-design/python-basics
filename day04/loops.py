@@ -92,3 +92,12 @@ while i<=10:
 #print numbers with step of 2
 for i in range(1,20,2):
     print(i)
+
+# count vowels in a string
+2
+s = "programming"
+count = 0
+for f in s:
+    if f in "aeiou":
+        count += 1
+print(count)
