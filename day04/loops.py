@@ -4,10 +4,12 @@ reverse = ""
 for ch in text:
     reverse = ch + reverse
 print("Reversed string:", reverse)
+
 # reverse the text
 text = "hello"
 reversed_text = ''.join(reversed(text))
 print(reversed_text)  # Output: "olleh"
+
 #find the squares
 squares=[number ** 2 for number in range(6)]
 print(squares)
@@ -38,7 +40,7 @@ for num in num:
         break
     else:
         print("6 num is not found")
-
+#find the numbers divided by5 in betwee 20
 
 num = 1
 while num <= 20:
@@ -47,7 +49,8 @@ while num <= 20:
         continue
     print(num)
     num += 1
-
+    
+#find the correct password
 while True:
     password = input ("enter the password:")
     if password == "python123":
