@@ -1,13 +1,14 @@
+#reverse the string
 text = "rabi"
 reverse = ""
 for ch in text:
     reverse = ch + reverse
 print("Reversed string:", reverse)
-
+# reverse the text
 text = "hello"
 reversed_text = ''.join(reversed(text))
 print(reversed_text)  # Output: "olleh"
-
+#find the squares
 squares=[number ** 2 for number in range(6)]
 print(squares)
 
@@ -101,3 +102,7 @@ for f in s:
     if f in "aeiou":
         count += 1
 print(count)
+
+#print the 100 stars
+for i in range(1,100):
+    print("*")
