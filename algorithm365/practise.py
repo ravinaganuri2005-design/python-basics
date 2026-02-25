@@ -26,3 +26,23 @@ def print_edge_stars(gridsize):
         print()    
 print_edge_stars(5) 
 
+
+
+# print the stars pyramid
+
+def print_stars_pyramid(hight):
+    noofstars = 1
+    for level in range(1,hight +1, 1):
+        noofspaces = hight - level
+        print(noofspaces * " " + noofstars * "*")
+        noofstars = noofstars + 2
+print_stars_pyramid(15)
+
+
+#print the reverse pyramid
+def print_reverse_stars_pyramid(hight):
+    for level in range(1, hight +1 ,1):
+        noofspaces = level - 1
+        noofstars = (hight - level) * 2 + 1
+        print(noofspaces * " " + noofstars * "*")
+print_reverse_stars_pyramid(15)
