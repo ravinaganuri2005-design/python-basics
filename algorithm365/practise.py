@@ -46,3 +46,37 @@ def print_reverse_stars_pyramid(hight):
         noofstars = (hight - level) * 2 + 1
         print(noofspaces * " " + noofstars * "*")
 print_reverse_stars_pyramid(15)
+
+
+#recursion examples
+
+# simple using for loop instead of recursion
+for num in range(5):
+    print(num)
+
+
+# using recursion instead of loops
+
+def print_numbers(n):
+    if n > 5:
+        return
+    print(n)
+    print_numbers(n+1)
+print_numbers(1)
+
+
+# ex 2) factorial numbers
+# formula of factorial is = n! = n! * (n-1)
+#return n * factorial(n-1)
+
+def factorial_numbers(nums):
+    if nums == 1 or nums == 0:
+        return 1
+    else:
+        return nums * factorial_numbers(nums - 1)
+nums = int (input("enter a number: "))
+result = factorial_numbers(nums)
+print(f"factorial of {nums} is",result)
+
+
+
