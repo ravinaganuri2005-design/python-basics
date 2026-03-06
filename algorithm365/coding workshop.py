@@ -34,3 +34,15 @@ def invoke_swap():
 invoke_swap()
 
 
+#write a function find the numbers is even or odd
+
+def even_odd_number(n)->bool:
+    if (n % 2 == 0):
+        return True
+    else:
+        return False
+result = even_odd_number(5)
+if result:
+    print("even number")
+else:
+    print("odd number")
