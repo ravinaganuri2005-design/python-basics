@@ -46,3 +46,31 @@ if result:
     print("even number")
 else:
     print("odd number")
+
+
+#write the function isdigit is number return true if it is digit
+def Isdigit(number):
+    isInteger = True
+    for eachcharacter in number:
+        if(eachcharacter >='0' and eachcharacter <= '9'):
+            continue
+        else:
+            isInteger = False
+            break
+    return isInteger
+ans = Isdigit('1234a')
+
+if ans:
+    print("all are digits")
+else:
+    print("its not a digit")
+
+#write a function simple greeting  accept your name and age as a input
+
+def simpleGreeting():
+    name = input("enter your name: ")
+    age = input("enter your age: ")
+    print(f"My name is {name}")
+    print(f"i am {age}year older")
+simpleGreeting()
+
