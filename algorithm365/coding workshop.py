@@ -74,3 +74,26 @@ def simpleGreeting():
     print(f"i am {age}year older")
 simpleGreeting()
 
+# write the function to find the length of string
+
+#simple method 
+a = "abc"
+b = len(a)
+print(b)
+
+#in logic building method
+
+def string_len(s)->int:
+    count = 0  
+    for character in s:
+        count = count + 1
+    return count
+
+input = "abdce"
+print(f"input is {input} -> and their length is {string_len(input)}")
+
+input2 = ""
+print(f"input is {input2} and their length is {string_len(input2)}")
+
+
+
