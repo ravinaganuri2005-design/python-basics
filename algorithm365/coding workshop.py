@@ -132,3 +132,15 @@ vowel_count = count_vowels(text)
 print(f"In the string '{text}', there are {vowel_count} vowels.")
 
 
+# write a function to reverse a string
+
+def reverse(string):
+    reverse_string = ""
+    for i in range(len(string)-1,-1,-1):
+        reverse_string =  reverse_string + string[i]
+    return reverse_string
+string = "ravi"
+a = reverse(string)
+print("reverse string is",a)
+
+
