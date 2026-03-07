@@ -118,4 +118,17 @@ input = "ravi"
 vowel_count = count_vowels(input)
 print(f"in the {input} is have a {(vowel_count)}vowels" )
 
+# it is another method to get a count the vowels in the string
+
+def count_vowels(x):
+    counter = 0
+    for char in x:
+        if char in "aeiouAEIOU":
+            counter += 1
+    return counter
+
+text = "abcde"
+vowel_count = count_vowels(text)
+print(f"In the string '{text}', there are {vowel_count} vowels.")
+
 
