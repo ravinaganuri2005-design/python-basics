@@ -96,4 +96,26 @@ input2 = ""
 print(f"input is {input2} and their length is {string_len(input2)}")
 
 
+# write a function to count the vowels in string
+
+def count_vowels(x):
+    counter = 0
+    for char in x:
+        if (char == 'a' or
+            char == 'e' or
+            char == 'i' or
+            char == 'o' or
+            char == 'u' or
+            char == 'A' or 
+            char == 'E' or
+            char == 'I' or
+            char == 'O' or
+            char == 'U'):
+            counter = counter + 1
+
+    return counter
+input = "ravi"
+vowel_count = count_vowels(input)
+print(f"in the {input} is have a {(vowel_count)}vowels" )
+
 
