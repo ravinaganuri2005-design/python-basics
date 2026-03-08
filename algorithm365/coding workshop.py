@@ -170,3 +170,20 @@ if result:
 else:
     print("string is not palindrom")
 
+
+
+# write a function to find maximum and minimum value in a array
+
+def max_min(numbers:list):
+    max = numbers [0]
+    min = numbers[0]
+    for index in range(1,len(numbers),1):
+        if numbers[index] > max:
+            max = numbers[index]
+        if numbers[index] < min:
+            min = numbers[index]
+    return min,max
+input = [1,2,3,4,5]
+resultmin,resultmax = max_min(input)
+print(f"The minimum value is {resultmin} and maximum value is {resultmax}")
+
