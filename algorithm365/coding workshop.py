@@ -144,3 +144,29 @@ a = reverse(string)
 print("reverse string is",a)
 
 
+
+#write a function to check string is pallindrom
+
+def isPalindrom(string:str)->bool:
+    leftindex = 0
+    rightindex = len(string) -1
+    result = True
+
+    while (leftindex < rightindex):
+        if string [leftindex] != string[rightindex]:
+            result = False 
+        break
+    leftindex = leftindex + 1
+    rightindex = rightindex - 1
+    return result
+
+input = "mam"
+input1 = "malayalam"
+input3 = "sir"
+
+result = isPalindrom(input3)
+if result:
+    print("string is a palindrom")
+else:
+    print("string is not palindrom")
+
