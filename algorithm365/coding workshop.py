@@ -199,4 +199,39 @@ print(list1)
 
 
 
+#write a function to get a second largest element
+def get_second_largest(number)-> int:
+    largestfirst =number[0]
+    largestsecond = number[0]
+    for index in range(1,len(number),1):
+        if number[index] > largestfirst:
+            largestsecond = largestfirst
+            largestfirst = number[index]
+        elif number[index] > largestsecond:
+            (number[index] > largestsecond)
+            largestsecond = number[index]
 
+    return largestsecond
+
+largest_number = [1,2,3,5,8 ,9]
+print(get_second_largest(largest_number))
+
+
+#write a function to print the unique element and remove duplicate
+
+def unique_element(numbers):
+    for read_index in range(1,len(numbers),1):
+        isDuplicate = False
+        for compare_index in range(1,len(numbers),1):
+            if read_index == compare_index:
+                continue
+            if numbers[read_index] == numbers[compare_index]:
+                isDuplicate =True
+                break
+        if(isDuplicate == False):
+            print(numbers[read_index])
+
+numbers = [2,1,2,4,6,4,7]
+unique_element(numbers)
+
+                
