@@ -187,3 +187,16 @@ input = [1,2,3,4,5]
 resultmin,resultmax = max_min(input)
 print(f"The minimum value is {resultmin} and maximum value is {resultmax}")
 
+#write  a function to merge two arrays return it combine
+
+def merge_list(list1:list, list2:list):
+    for item in list2:
+        list1.append(item)
+list1 =[1,2,3]
+list2 =[4,5,6]
+merge_list(list1,list2)
+print(list1)
+
+
+
+
