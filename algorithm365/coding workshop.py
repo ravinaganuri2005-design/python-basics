@@ -234,4 +234,20 @@ def unique_element(numbers):
 numbers = [2,1,2,4,6,4,7]
 unique_element(numbers)
 
+
+#check prime number 
+
+def prime(n):
+    prime = True
+    for i in range(2,n):
+        if n % i == 0:
+            prime = False
+            break
+        
+    if prime:
+        print("this is prime number")
+    else:
+        print("this is not a prime number")
+prime(9)
+prime(2)
                 
