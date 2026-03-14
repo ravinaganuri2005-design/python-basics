@@ -22,3 +22,18 @@ def count_char(s, char):
 s = str(input("enter a string: "))
 char = str(input("enter a char: "))
 print(count_char(s,char))
+
+
+#find the second largest number
+def second_largest(numbers):
+    maxfirst = 0
+    maxsecond = 0
+    for i in numbers:
+        if i > maxfirst:
+            maxsecond = maxfirst  
+            maxfirst = i
+        elif i > maxsecond:
+            maxsecond = i         
+    return maxsecond
+result =[1,2,3,3,5]
+print(second_largest(result))
