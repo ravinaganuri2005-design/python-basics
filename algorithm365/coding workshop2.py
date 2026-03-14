@@ -11,3 +11,14 @@ def fizzbuzz(n):
             print(i)
 
 fizzbuzz(15)
+#count the character more than one time apear
+def count_char(s, char):
+    count = 0
+    for letter in s:
+        if letter == char:
+            count = count + 1
+    return count
+
+s = str(input("enter a string: "))
+char = str(input("enter a char: "))
+print(count_char(s,char))
