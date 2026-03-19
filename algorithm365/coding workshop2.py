@@ -37,3 +37,9 @@ def second_largest(numbers):
     return maxsecond
 result =[1,2,3,3,5]
 print(second_largest(result))
+
+# Remove zeros from a list
+
+numbers = [1, 0, 3, 0, 5, 0, 7, 8]
+result = [n for n in numbers if n != 0]
+print(result)
