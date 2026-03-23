@@ -12,4 +12,18 @@ car2 = car("suzuki","Blue")
 car1.drive()
 car2.drive()
 
-        
+
+#Just another example of using class and objects methods 
+class phone:
+    def __init__(self,brand,price,battery):
+        self.brand = brand
+        self.price = price
+        self.battery = battery
+    def show_info(self):
+        print(f"I buy the {self.brand} and price {self.price} battery pickup {self.battery}")
+
+phone1 =phone ("iphone","180000","Good")
+phone2 = phone("samasang","98000","Very Good")
+
+phone1.show_info()
+phone2.show_info()
