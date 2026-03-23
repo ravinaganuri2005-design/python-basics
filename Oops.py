@@ -27,3 +27,35 @@ phone2 = phone("samasang","98000","Very Good")
 
 phone1.show_info()
 phone2.show_info()
+
+
+#Encapsulation example-> private
+
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance = balance
+    def deposit (self,amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"Deposited{amount}")
+        else:
+            print("invalid amount")
+    def withdraw(self, amount):
+        if amount > self.__balance:
+            print("Not enough balance!")
+        elif amount <= 0:
+            print("Invalid amount!")
+        else:
+            self.__balance -= amount
+            print(f"Withdrawn ₹{amount}")
+    def get_balance(self):
+        return self.__balance
+acc = BankAccount(10000)
+
+acc.deposit(5000)          # Deposited ₹5000
+acc.withdraw(3000)         # Withdrawn ₹3000
+print(acc.get_balance())   # 12000
+
+# Try to break it
+acc.deposit(-500)          # Invalid amount!
+acc.withdraw(99999)        # Not enough balance!
