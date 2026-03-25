@@ -13,6 +13,7 @@ car1.drive()
 car2.drive()
 
 
+
 #Just another example of using class and objects methods 
 class phone:
     def __init__(self,brand,price,battery):
