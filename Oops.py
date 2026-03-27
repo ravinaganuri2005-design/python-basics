@@ -75,3 +75,34 @@ print(acc.get_balance())   # 12000
 # Try to break it
 acc.deposit(-500)          # Invalid amount!
 acc.withdraw(99999)        # Not enough balance!
+
+
+#with encapsulation 
+
+class BankAccs:
+    def __init__(self,balancing):
+        self.__balancing = balancing
+
+    def deposits(self,amounts):
+        if amounts > 0:
+            self.__balancing += amounts
+            print(f"Added{amounts}")
+        else:
+            print("Invalid amount")
+    def get_balancing(self):
+        print(f"balancing is {self.__balancing}")
+accs = BankAccs(8000)
+accs.deposits(4000)
+accs.get_balancing()
+
+#same above example with explanation
+class BankAccs:                          # ← class name        — NOT private
+    def __init__(self, balancing):       # ← method name       — NOT private
+        self.__balancing = balancing     # ← THIS variable     — 🔒 PRIVATE
+
+    def deposits(self, amounts):         # ← method name       — NOT private
+        if amounts > 0:                  # ← logic             — NOT private
+            self.__balancing += amounts  # ← using the private variable (allowed — inside class)
+
+    def get_balancing(self):             # ← method name       — NOT private
+        print(f"balancing is {self.__balancing}")  # ← reading private variable (allowed)
