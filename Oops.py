@@ -30,6 +30,21 @@ phone1.show_info()
 phone2.show_info()
 
 
+#examples of creating objects and class atributes
+class Dog:
+    def __init__(self,bark,food):
+        self.bark = bark
+        self.food = food
+    def walk(self):
+        print(f"my dog eating {self.food} my dog barking like{self.bark}")
+        
+dog1 = Dog("boww","leg peice")
+dog2 = Dog("grrrrrrrrrr","rotiii")
+
+dog1.walk()
+dog2.walk()
+
+
 #Encapsulation example-> private
 
 class BankAccount:
