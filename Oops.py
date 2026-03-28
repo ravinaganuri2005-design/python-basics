@@ -106,3 +106,32 @@ class BankAccs:                          # ← class name        — NOT private
 
     def get_balancing(self):             # ← method name       — NOT private
         print(f"balancing is {self.__balancing}")  # ← reading private variable (allowed)
+
+
+#INHERITANCE PROBLEM
+class vehical:
+    def __init__(self,brand):
+        self.brand = brand
+    def start(self):
+        print(f"{self.brand} is starting")
+    def stop(self):
+        print(f"{self.brand} is stoping")
+class car(vehical):
+    def honk(self):
+        print(f"{self.brand} Beep beep!") 
+
+class Bike(vehical):
+    def whiele(self):
+        print(f"{self.brand} Doing a wheliee") 
+
+# car object 
+car1 = car("BMW")    
+car1.start()
+car1.stop()
+car1.honk()
+
+#Bike object
+Bike1 = Bike("XL")
+Bike1.start()
+Bike1.stop()
+Bike1.whiele()
