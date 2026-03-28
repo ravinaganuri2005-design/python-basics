@@ -135,3 +135,25 @@ Bike1 = Bike("XL")
 Bike1.start()
 Bike1.stop()
 Bike1.whiele()
+
+
+#using super()--> its used to incase same parents properties have in child dont it read twicely
+
+class vahicle:
+    def __init__(self,brand):
+        self.brand = brand
+    def start(self):
+        print(f"{self.brand} is starting")
+    def stop(self):
+        print(f"{self.brand} is stoping")
+class cars(vahicle):
+    def __init__(self,brand,door):
+        super().__init__(brand)  #super method
+        self.door = door
+    def honk(self):
+        print(f"{self.brand} is roaring with {self.door}")
+
+cars1 = cars("Ferrari","4 doors")
+cars1.start()
+cars1.stop()
+cars1.honk()
