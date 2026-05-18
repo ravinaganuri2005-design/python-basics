@@ -10,7 +10,7 @@ def len_search(numbers,key):
   
     print("number is not found")
 numbers=[10,20,30,40,50,60]
-key=int(input("enter a number you want: "))
+key=int(input("enter  number you want: "))
 #calling or invoke
 len_search(numbers,key)
 
