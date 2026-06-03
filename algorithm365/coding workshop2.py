@@ -43,3 +43,15 @@ print(second_largest(result))
 numbers = [1, 0, 3, 0, 5, 0, 7, 8]
 result = [n for n in numbers if n != 0]
 print(result)
+
+# find the power of 2 
+def power_of_two(number):
+    if number <= 0:
+        return False
+    while number != 1:
+        if (number % 2 != 0):
+            return False
+        number = number // 2
+    return True
+value = 6
+print(power_of_two(value))
