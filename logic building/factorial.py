@@ -5,7 +5,7 @@
 # Multiply result by the current number.
 # Store the answer back in result.
 # After the loop ends, result contains the factorial.
-# Print result.
+# Print result
 # Stop.
 
 number = 5
