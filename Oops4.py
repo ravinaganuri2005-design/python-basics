@@ -45,5 +45,28 @@ print(r.perimater)
 r.width =23  # CHANGE THE VALUE
 print(r.width)
 
-r.height = -77  # NO CHANGE BECOUSE IT IS NAGETIVE
+
+
+class student:
+    def __init__(self,name,age):
+        self.name = name
+        self._age = age
+    @property
+    def age(self): #Getter
+        print("someone can read your info")
+        return self._age
+    
+    @age.setter  #Setter
+    def age(self,value):
+        print("someone change your information")
+        if value < 5 or value > 100:
+            print("change the age between  5 to 100")
+        else:
+            self._age = value
+s = student("Ravi",22)
+print(s.age)  # try to read the info
+s.age = 25   # set new value to age
+print(s.age)  # print the new value
+s.age = 200
+print(s.age)r.height = -77  # NO CHANGE BECOUSE IT IS NAGETIVE
 print(r.height)
