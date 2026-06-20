@@ -70,3 +70,36 @@ print(s.age)  # print the new value
 s.age = 200
 print(s.age)r.height = -77  # NO CHANGE BECOUSE IT IS NAGETIVE
 print(r.height)
+
+
+
+#ABSTRACT CLASS
+#Abstract class = a template that forces every subclass
+#  to implement certain methods, and can't be used to create objects on its own.
+
+
+from abc import ABC, abstractmethod
+
+class PaymentMethod(ABC):
+    @abstractmethod
+    def pay(self, amount):
+        pass
+
+class CreditCard(PaymentMethod):
+    def pay(self, amount):
+        print(f"Paid ${amount} using Credit Card ")
+
+class PayPal(PaymentMethod):
+    def pay(self, amount):
+        print(f"Paid ${amount} using PayPal")
+
+class Cash(PaymentMethod):
+    def pay(self, amount):
+        print(f"Paid ${amount} using Cash ")
+
+
+# ---- Use it ----
+payments = [CreditCard(), PayPal(), Cash()]
+
+for p in payments:
+    p.pay(100)
