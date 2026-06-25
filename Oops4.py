@@ -1,4 +1,4 @@
-
+ 
 #GETTER AND SETTER WITH SOME EXAMPLES
 class rectangel:
     def __init__(self,width,height):
