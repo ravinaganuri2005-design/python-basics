@@ -1,4 +1,4 @@
-#function to get sum of two numbers
+# function to get sum of two numbers
 
 # declare the function
 def get_sum(number1,number2):
