@@ -1,5 +1,4 @@
- 
-#GETTER AND SETTER WITH SOME EXAMPLES
+ #GETTER AND SETTER WITH SOME EXAMPLES
 class rectangel:
     def __init__(self,width,height):
         self.width = width
