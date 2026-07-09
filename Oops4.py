@@ -1,7 +1,7 @@
  #GETTER AND SETTER WITH SOME EXAMPLES
 class rectangel:
     def __init__(self,width,height):
-        self.width = width
+       self.width = width
         self.height =height
     
     @property   #getter
