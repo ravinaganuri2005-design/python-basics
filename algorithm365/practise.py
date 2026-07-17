@@ -78,5 +78,17 @@ nums = int (input("enter a number: "))
 result = factorial_numbers(nums)
 print(f"factorial of {nums} is",result)
 
-
+armstrong number
+number = 123
+original = number
+lenofnumber = len(str(number))
+total = 0
+while number >0:
+    digits = number % 10
+    total = total + digits ** lenofnumber
+    number = number // 10
+if total == original:
+    print("It is armstrong number")
+else:
+    print("It is not armstrong number")
 
