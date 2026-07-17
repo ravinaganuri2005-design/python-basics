@@ -78,7 +78,7 @@ nums = int (input("enter a number: "))
 result = factorial_numbers(nums)
 print(f"factorial of {nums} is",result)
 
-armstrong number
+#armstrong number
 number = 123
 original = number
 lenofnumber = len(str(number))
