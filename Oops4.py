@@ -7,7 +7,7 @@ class rectangel:
     @property   #getter
     def width(self):
         return self._width
-    
+   
     @width.setter   #setter
     def width(self,values):
         if values <=0:
