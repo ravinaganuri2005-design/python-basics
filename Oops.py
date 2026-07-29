@@ -7,7 +7,7 @@ class car:
 
 # Create objects from the class
 car1 = car("Honda","Red")
-car2 = car("suzuki","Blue")
+car2 = car("suzuki","Blue") 
 
 car1.drive()
 car2.drive()
