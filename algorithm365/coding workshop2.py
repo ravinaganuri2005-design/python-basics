@@ -55,3 +55,23 @@ def power_of_two(number):
     return True
 value = 6
 print(power_of_two(value))
+
+
+#binary search 
+def binary_search():
+
+    arr = [5, 10, 15, 20, 25, 30, 35]
+    target = 25
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            print("Found at index:", mid)
+            return
+        elif target < arr[mid]:
+            high = mid - 1
+        else:
+            low = mid + 1
+    print("Not Found")
+binary_search()
