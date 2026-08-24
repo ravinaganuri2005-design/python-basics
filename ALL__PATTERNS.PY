@@ -112,3 +112,49 @@ Output:
 123
 12
 1
+
+
+
+# Pattern 7
+print("Pattern 7")
+class solution:
+    def pattern7(self,n):
+        for i in range(n):
+            for j in range(n-i-1):
+                print(" ",end ="")
+            for j in range(2*i+1):
+                print("*",end ="")
+            for j in range(n-i-1):
+                print(" ",end ="")
+            print()
+obj = solution()
+obj.pattern7(5)
+
+output:
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+
+#Pattern 8
+print("pattern 8")
+class solution:
+    def pattern8(self,n):
+        for i in range(n):
+            for j in range(i):
+                print(" ",end ="")
+            for j in range(2*n -(2*i+1)):
+                print("*",end ="")
+            for j in range(i):
+                print(" ",end ="")
+            print()
+obj = solution()
+obj.pattern8(5)
+
+output:
+*********
+ ******* 
+  *****  
+   ***   
+    *  
