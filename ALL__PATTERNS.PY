@@ -94,3 +94,21 @@ pattern 5
 ***
 **
 *
+
+#pattern 6
+print("Pattern 6")
+class solution:
+    def pattern6(self,n):
+        for i in range(1,n+1):
+            for j in range(1,n-i+2):
+                print(j, end = "")
+            print()
+obj = solution()
+obj.pattern6(5)
+
+Output:
+12345
+1234
+123
+12
+1
