@@ -222,3 +222,27 @@ pattern 10
 ***
 **
 *
+
+#pattern 11
+print("pattern 11")
+class solution:
+    def pattern11(self,n):
+        for i in range(n):
+            if (i % 2==0):
+                starts =1
+            else: 
+                starts =0
+            for j in range(i+1):
+                print(starts, end = "")
+                starts = 1 - starts
+            print()
+obj = solution()
+obj.pattern11(5)
+
+output:
+pattern 11
+1
+01
+101
+0101
+10101
