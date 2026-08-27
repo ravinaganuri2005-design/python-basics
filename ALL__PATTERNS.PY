@@ -246,3 +246,31 @@ pattern 11
 101
 0101
 10101
+
+
+#pattern 12
+print("Pattern 12")
+class Solution:
+
+    def pattern(self, n):
+
+        for i in range(1, n + 1):
+            # Left side
+            for j in range(1, i + 1):
+                print(j, end="")
+            # Spaces
+            for j in range(2 * (n - i) + 1):
+                print(" ", end="")
+            # Right side
+            for j in range(i, 0, -1):
+                print(j, end="")
+            print()
+obj = Solution()
+obj.pattern(4)
+
+ouput:
+Pattern 12
+1       1
+12     21
+123   321
+1234 4321
