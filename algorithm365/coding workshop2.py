@@ -75,3 +75,23 @@ def binary_search():
             low = mid + 1
     print("Not Found")
 binary_search()
+
+
+
+#armstrong number
+
+class solution:
+    def isarm_strong_number(self,n):
+        duplicate = n
+        digits = len(str(n))
+        total = 0
+        while n >0:
+            digit = n % 10
+            total = total + digit ** digits
+            n = n // 10
+        if total ==duplicate:
+            return True
+        else:
+            return False
+obj = solution()
+print(obj.isarm_strong_number(152))
