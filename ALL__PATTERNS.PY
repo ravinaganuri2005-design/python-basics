@@ -297,3 +297,24 @@ pattern 13
 4 5 6 
 7 8 9 10 
 11 12 13 14 15 
+
+
+#pattern 14
+print("pattern 14")
+class solution :
+    def pattern14(self,n):
+        for i in range(n):
+            for j in range(i+1):
+                print(chr(65+j),end="")
+            print()
+obj=solution()
+obj.pattern14(5)
+
+output:
+pattern 14
+A
+AB
+ABC
+ABCD
+ABCDE
+
