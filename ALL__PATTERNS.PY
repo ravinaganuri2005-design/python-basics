@@ -338,3 +338,23 @@ ABCD
 ABC
 AB
 A
+
+
+# pattern 16
+print ("pattern 16")
+class solution:
+    def pattern16(self,n):
+        for i in range(n):
+            for j in range(i+1):
+                print(chr(65+i),end ="")
+            print()
+obj = solution()
+obj.pattern16(5)
+
+OUTPUT:
+pattern 16
+A
+BB
+CCC
+DDDD
+EEEEE
