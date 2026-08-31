@@ -318,3 +318,23 @@ ABC
 ABCD
 ABCDE
 
+
+
+#pattern 15
+print("pattern 15")
+class solution:
+    def pattern15(self,n):
+        for i in range(1,n+1):
+            for j in range(n-i+1):
+                print(chr(65+j),end="")
+            print()
+obj= solution()
+obj.pattern15(5)
+
+OUTPUT:
+pattern 15
+ABCDE
+ABCD
+ABC
+AB
+A
