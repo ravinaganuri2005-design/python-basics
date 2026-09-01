@@ -358,3 +358,25 @@ BB
 CCC
 DDDD
 EEEEE
+
+print("Pattern 17")
+class Solution:
+    def pattern17(self, n):
+        for i in range(n):
+            for j in range(n - i - 1):
+                print(" ", end="")
+            for j in range(i + 1):
+                print(chr(65 + j), end="")
+            for j in range(i - 1, -1, -1):
+                print(chr(65 + j), end="")
+            print()
+obj = Solution()
+obj.pattern17(5)
+
+OUTPUT:
+Pattern 17
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
