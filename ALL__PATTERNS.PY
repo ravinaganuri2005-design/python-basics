@@ -380,3 +380,22 @@ Pattern 17
   ABCBA
  ABCDCBA
 ABCDEDCBA
+
+
+#pattern 18
+print('pattern 18')
+class solution:
+    def pattern18(self,n):
+        for i in range(1,n+1):
+            for j in range(i):
+                print(chr(70-i+j),end ="")
+            print()
+obj =solution()
+obj.pattern18(5)
+
+output:
+E
+DE
+CDE
+BCDE
+ABCDE
