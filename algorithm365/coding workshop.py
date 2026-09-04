@@ -250,4 +250,11 @@ def prime(n):
         print("this is not a prime number")
 prime(9)
 prime(2)
-                
+#natural number print
+def sum_of_natural(n):
+    if n == 0:
+        return 0
+    else:
+        return sum_of_natural(n - 1) + n
+
+print(sum_of_natural(5))
