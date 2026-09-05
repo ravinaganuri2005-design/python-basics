@@ -438,3 +438,39 @@ pattern 19
 ***    ***
 ****  ****
 **********
+
+
+
+print("pattern 20")
+class solution3:
+    def pattern20(self,n):
+       for i in range(2*n-1):
+            stars = i +1
+            if (i >=n):
+                stars = 2*n-i-1
+            # stars print
+            for j in range(stars):
+                print("*",end ="")
+            # space print
+            spaces = 2*n - 2*stars
+            for j in range(spaces):
+                print(" ",end ="")
+            # stars print
+            for j in range(stars):
+                print("*",end ="") 
+            print()
+                      
+obj=solution3()
+obj.pattern20(5)
+
+output:
+pattern 20
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
