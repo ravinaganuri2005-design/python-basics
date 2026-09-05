@@ -474,3 +474,26 @@ pattern 20
 ***    ***
 **      **
 *        *
+
+
+#pattern 21
+print("Pattern 21")
+class solution:
+    def pattern21(self,n):
+        for i in range(n):
+            for j in range(n):
+                if(i==0 or j==0 or j==n-1 or i ==n-1):
+                    print("*",end ="")
+                else:
+                    print(" ",end ="")
+            print()
+obj =solution()
+obj.pattern21(5)
+
+output:
+Pattern 21
+*****
+*   *
+*   *
+*   *
+*****
