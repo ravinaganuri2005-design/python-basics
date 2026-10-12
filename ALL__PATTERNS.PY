@@ -1,5 +1,4 @@
 #Pattern 1
-
 print("Pattern 1")
 class solution:
     def pattern1(self,n):
