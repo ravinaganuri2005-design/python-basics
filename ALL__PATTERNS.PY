@@ -5,7 +5,7 @@ class solution:
         for i in range(n):
            for j in  range(n):
                  print("*",end ="")
-            print()
+           print()
 obj = solution()
 obj.pattern1(5)
 
