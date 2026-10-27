@@ -9,7 +9,7 @@ class solution:
 obj = solution()
 obj.pattern1(5)
 
-OUTPUT:Pattern 1
+OUTPUT:pattern 1
 *****
 *****
 *****
