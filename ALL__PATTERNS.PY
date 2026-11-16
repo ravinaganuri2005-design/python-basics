@@ -8,7 +8,6 @@ class solution:
            print()
 obj = solution()
 obj.pattern1(5)
-
 OUTPUT:pattern 1
 *****
 *****
