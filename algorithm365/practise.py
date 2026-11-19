@@ -109,3 +109,46 @@ class Solution:
             return 0
         return reverse_number
 
+
+
+
+# Print numbers from 1 to 100 using a for loop.
+# Print even numbers from 1 to 50.
+# Find the sum of numbers from 1 to 10.
+# Print the multiplication table of 5.
+# Reverse a number using a while loop.
+#factorial
+
+
+for i in range(1,101):
+    print(i)
+
+for i in range(1,51):
+    if i % 2 ==0:
+        print(i)
+sum =0
+for i in range(1,11):
+    sum = sum +i
+print(sum)
+
+number = 5
+for i in range(1,11):
+    print(number ,"X",i,"=",number*i)
+
+
+numbers = 123
+reverse = 0
+while numbers >0:
+    last_digit = numbers % 10
+    reverse = reverse * 10 + last_digit
+    numbers =numbers //10
+
+print(reverse)
+
+
+n = 5
+result =1
+while(1<=n):
+    result = result * n
+    n = n-1
+print(result)
