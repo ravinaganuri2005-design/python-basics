@@ -7,6 +7,6 @@
 
 def mutate_string(string, position, character):
     l = list(string)
-    l[5]= character
+    l[position]= character
     
     return ''.join(l)
