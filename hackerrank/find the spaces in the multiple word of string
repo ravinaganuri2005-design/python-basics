@@ -1,0 +1,6 @@
+def count_sentence():
+    text = " python programming in kannada "
+    words = text.split()
+    count = len(words)
+    print("The number of words:", count)
+count_sentence()
